@@ -22,6 +22,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
+    border-right: 2px solid rgb(7, 71, 100);
 }
 
 .title-container {
@@ -33,6 +34,7 @@ body {
 
 .credits {
     margin-bottom: 10px;
+    font-size: 0.8rem;
     background: linear-gradient(
         to right, 
         rgba(218, 255, 255, 0.6), 
@@ -62,12 +64,15 @@ body {
 
 .form-container {
     padding-left: var(--padding-margin-left);
-    background-color: rgb(220, 244, 255);
+    background: linear-gradient(
+        to right, 
+        rgb(10, 97, 138) 10%, 
+        rgb(52, 162, 212));
     box-shadow: 0 10px 20px -10px rgb(189, 220, 255);
     width: 100%;
     padding-top: 25px;
     padding-bottom: 25px;
-    color: rgb(0, 2, 112);
+    color: rgb(255, 255, 255);
     font-weight: 500;
 }
 
@@ -111,11 +116,11 @@ input:hover {
     border: 2px solid rgb(109, 197, 255);
 }
 
-input:focus {
+input:active {
     border: 2px solid rgb(109, 197, 255);
 }
 
-.content button {
+#button {
     margin-left: var(--padding-margin-left);
     margin-top: -50px;
     min-width: 200px;
@@ -128,7 +133,10 @@ input:focus {
     border-radius: 10px;
     border: 0;
     border-bottom: 4px solid rgb(12, 128, 182);
-    
+}
+
+#button:hover {
+    background-color: rgb(64, 174, 224);
 }
 
 .content > button + p {
