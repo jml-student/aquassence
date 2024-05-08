@@ -8,7 +8,7 @@ body {
     height: 100vh;
     width: 100vw;
     display: flex;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .image-container {
@@ -21,6 +21,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .title-container {
@@ -43,24 +44,31 @@ body {
 
 .credits > a {
     text-decoration: none;
+    color: rgb(0, 38, 255);
 }
 
 .content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 100%;
     --padding-margin-left: 30px;
 }
 
 .info {
-    width: 70ch;
+    width: 52ch;
     margin-left: var(--padding-margin-left);
 }
 
 .form-container {
     padding-left: var(--padding-margin-left);
-    box-shadow: 0 10px 20px -10px rgb(121, 121, 121);
-
+    background-color: rgb(220, 244, 255);
+    box-shadow: 0 10px 20px -10px rgb(189, 220, 255);
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: rgb(0, 2, 112);
+    font-weight: 500;
 }
 
 .form-container h1 {
@@ -75,12 +83,11 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    gap: 15px;
 }
 
 .inputs {
-    box-sizing: content-box;
-    padding-right: 0px;
+    padding-right: 10px;
     padding-bottom: 15px;
     width: 40%;
     display: flex;
@@ -88,8 +95,40 @@ body {
     flex-wrap: wrap;
 }
 
+input {
+    box-sizing: border-box;
+    height: 3rem;
+    max-height: 3rem;
+    width: 70%;
+    margin-top: 8px;
+    font-size: 18px;
+    border: 1px solid rgb(205, 235, 255);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+input:hover {
+    border: 2px solid rgb(109, 197, 255);
+}
+
+input:focus {
+    border: 2px solid rgb(109, 197, 255);
+}
+
 .content button {
     margin-left: var(--padding-margin-left);
+    margin-top: -50px;
+    min-width: 200px;
+    width: 200px;
+    height: 6.5vh;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: rgb(14, 156, 223);
+    border-radius: 10px;
+    border: 0;
+    border-bottom: 4px solid rgb(12, 128, 182);
+    
 }
 
 .content > button + p {
