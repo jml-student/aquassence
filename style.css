@@ -16,7 +16,7 @@
 
 :root {
     font-size: 16px;
-    --credit-font-size: 0.75rem;
+    --credit-font-size: 1rem;
     --padding-margin-left: 30px;
     --error-red-color: rgb(253, 117, 117);
 }
@@ -230,31 +230,63 @@ input:focus {
     body {
         flex-direction: column;
         min-height: 130vh;
+        max-width: 100%;
     }
 
     .image-container {
         width: 100%;
         height: 35vh;
+        border: 0;
+    }
+
+    .logo img {
+        height: 15vw;
+        width: 15vw;
     }
 
     .title {
-        font-size: 6vh;
+        font-size: 9vw;
     }
 
     .credits {
-        position: initial;
+        display: flex;
+        gap: 0.5vw;
+
+    }
+
+    .unsplash {
+        margin-bottom: 10px;
+        font-size: 2vw;
+        background: linear-gradient(
+        to right,
+        rgb(197 197 197 / 60%),
+        rgb(146 255 255 / 60%),
+        rgb(123 196 196 / 60%));
+    }
+
+    .flaticon {
+        font-size: 2vw;
+    }
+
+    .unplash a, .flaticon a {
+        font-size: 2vw;
     }
 
     .info {
         padding: 1.5vh;
+        margin-right: var(--padding-margin-left);
     }
    
     .info p{
-        font-size: 3vh;
+        font-size: 2vh;
     }
 
     input {
         width: 30vw;
+    }
+
+    .inputs label {
+        font-size: 3vw;
     }
 
     #button {
@@ -266,12 +298,15 @@ input:focus {
 
     #button + p {
         margin-top: 8vh;
-        font-size: 2vh;
+        font-size: 1rem;
+        flex-wrap: wrap;
+    }
+
+    #button + p > span {
+        white-space: nowrap;
     }
 
     .error-message {
         font-size: 1.7vh;
     }
-
-   
 }
