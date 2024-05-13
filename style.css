@@ -37,7 +37,7 @@ body {
 .image-container {
     max-height: 100vh;
     width: 30%;
-    background-image: url(./shifaaz-shamoon-9K9ipjhDdks-unsplash.jpg);
+    background-image: url(./img/shifaaz-shamoon-9K9ipjhDdks-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
